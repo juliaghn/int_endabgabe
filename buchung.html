@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de" class="home">
+    <head>
+        <meta charset="utf-8" />
+		<title>Hotel</title>
+		<link rel="stylesheet" href="design.css" />
+    </head>
+
+    <body>
+        
+      <div class="treehouse" style=" text-align:left; float:left;">
+        <p>Treehouse B&B</p>
+      </div>
+    
+      <div class="suche" style=" text-align:right;"> 
+        <p>  <a href="index.html"> Homepage</a> <a href="räume.html">Baumhäuser </a> <a href="kalender.html">Kalender</a> <a> <strong>Buchung</strong></a> <a href="ueberuns.html">Über uns</a> <a href="umgebung.html"> Umgebung</a> <a href="kontakt.html" >Kontakt </a></p>
+      </div>
+    
+      <div class="bild">
+       <img src="rezeption.png" alt="TLC" width="2000px">
+      </div>
+ 
+     <div class="text-overlay">
+       <h1>Buchung</h1>
+     </div>
+  
+      <div class="buchung">
+        <p>Buchen Sie Ihren Aufenthalt ganz bequem über unser Buchungsportal:</p>
+        <br>
+        <br>
+        <form action="process_booking.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+                
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname">
+        <br>
+        <br>
+          <label for="Personenzahl">Personenzahl:</label>
+          <input type="number" id="Personenzahl" name="Personenzahl">
+        <br>
+        <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        <br>
+        <br>
+          <label for="telefon">Telefon:</label>
+          <input type="telefon" id="telefon" name="telefon">
+        <br> 
+        <br>
+          <label for="arrival">Anreisedatum:</label>
+          <input type="date" id="arrival" name="arrival">
+          <label for="abreise">Abreisedatum:</label>
+          <input type="date" id="abreise" name="abreise">
+        <br>
+        <br>
+          <label for="Baumhaus">Baumhaustyp:</label>
+          <select id="Baumhaus" name="Baumhaus">
+            <option value="single">Baumhaus 1</option>
+            <option value="double">Baumhaus 2</option>
+            <option value="suite">Baumhaus 3</option>
+            <option value="suite">Baumhaus 4</option>
+          </select>
+        <br>
+        <br>
+          <input type="submit" value="Buchen">
+        <br>
+        <br>
+        </form>
+      </div>
+
+      <div class="hinweis">
+        <br>
+        <p>Bitte beachten Sie: Frühstück wird automatisch dazugebucht.</p>
+        <p>Stornierungen sind kostenpflichtig bis eine Woche vor Buchungszeitraum möglich.</p>
+      </div>
+          
+      <div class="impressum">
+        <p><a href="kontakt.html#Kontakt">Kontakt</a> <a href="impressum.html">Impressum</a></p>
+      </div>
+           
+    </body>
